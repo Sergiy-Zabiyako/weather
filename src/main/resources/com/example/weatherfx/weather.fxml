@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6495ED; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weatherfx.WeatherController">
+    <children>
+        <Text fill="#220af7" layoutX="240.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather" wrappingWidth="120.5367431640625">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Text>
+        <Text fx:id="temp" layoutX="30.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Температура" wrappingWidth="540.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Text fx:id="press" layoutX="30.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Давление" wrappingWidth="540.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Text fx:id="wind" layoutX="30.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Скорость ветра" wrappingWidth="540.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Button fx:id="getData" defaultButton="true" layoutX="234.0" layoutY="126.0" mnemonicParsing="false" onAction="#onWeatherButtonClick" text="Запрос погоды">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Button>
+        <Text fx:id="date" layoutX="30.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дата" wrappingWidth="540.0" AnchorPane.topAnchor="175.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <TextField fx:id="city" layoutX="119.0" layoutY="65.0" prefHeight="46.0" prefWidth="361.0" promptText="Введи город" style="-fx-border-color: #fafafa; -fx-border-radius: 5; -fx-opacity: 1;">
+            <font>
+                <Font size="22.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <effect>
+                <Blend mode="BLUE" />
+            </effect>
+        </TextField>
+        <Text fx:id="hum" layoutX="30.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Влажность" wrappingWidth="540.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Text fx:id="visible" layoutX="30.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Видимость" wrappingWidth="540.0">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Text>
+        <Text fx:id="address" layoutX="83.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="434.13671875">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Text>
+        <Button fx:id="buttonCartTemp" defaultButton="true" layoutX="451.0" layoutY="209.0" mnemonicParsing="false" onAction="#initialize" text="График температуры" />
+    </children>
+</AnchorPane>
