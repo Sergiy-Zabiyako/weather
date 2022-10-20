@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #6495ED; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.weatherfx.ChartTempController">
+    <children>
+        <Text fill="#220af7" layoutX="240.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather" wrappingWidth="120.5367431640625">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Text>
+        <LineChart layoutX="13.0" layoutY="57.0" prefHeight="292.0" prefWidth="574.0" style="-fx-background-color: #6495ED; -fx-border-color: #1E90FF; -fx-alternative-column-fill-visible: 0;">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" label="Temperature" side="LEFT" />
+            </yAxis>
+        </LineChart>
+    </children>
+</AnchorPane>
